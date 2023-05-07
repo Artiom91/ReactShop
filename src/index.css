@@ -49,8 +49,7 @@ nav {
     top: 5rem;
     bottom: unset;
   }
-} 
-
+}
 
 .basket-list {
   position: fixed;
@@ -80,7 +79,8 @@ nav {
   from {
     top: 70%;
     opacity: 0;
-  } to {
+  }
+  to {
     top: 50%;
     opacity: 1;
   }
@@ -90,4 +90,20 @@ nav {
   cursor: pointer;
   vertical-align: middle;
   color: #26a69a;
+}
+
+#toast-container {
+  top: 3rem !important;
+  animation: fade-in 250ms ease-in-out
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
 }
