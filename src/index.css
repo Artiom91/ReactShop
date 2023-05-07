@@ -51,7 +51,6 @@ nav {
   }
 } 
 
-.cart-quantity {}
 
 .basket-list {
   position: fixed;
@@ -61,6 +60,8 @@ nav {
   background: #fff;
   width: 50rem;
   max-width: 95%;
+
+  animation: show 500ms ease-in-out;
 }
 
 .basket-close {
@@ -73,4 +74,20 @@ nav {
 
 .basket-delete {
   cursor: pointer;
+}
+
+@keyframes show {
+  from {
+    top: 70%;
+    opacity: 0;
+  } to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+.basket-quantity {
+  cursor: pointer;
+  vertical-align: middle;
+  color: #26a69a;
 }
